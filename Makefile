@@ -3,8 +3,9 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
-fromat:
+format:
 	#format code
+	black *.py mylib/*.py
 
 lint:
 	#flake8 or #pylint
